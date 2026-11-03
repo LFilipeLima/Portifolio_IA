@@ -19,26 +19,24 @@ import Wrapper from "@/components/fundations/containers/Wrapper.astro";
     <div class="mt-12 flex flex-col gap-10">
       <article class="grid grid-cols-1 gap-4 border-t border-base-200 py-8 dark:border-base-800 lg:grid-cols-4">
         <Text tag="p" variant="textXS" class="uppercase text-base-600 dark:text-base-300">01 · Colaboração</Text>
-        <Text tag="h3" variant="textLG" class="font-semibold text-base-900 dark:text-white">Subagentes para dividir e revisar o trabalho</Text>
+        <Text tag="h3" variant="textLG" class="font-semibold text-base-900 dark:text-white">Codex com subagentes para dividir e revisar o trabalho</Text>
         <div class="space-y-4 lg:col-span-2">
           <Text tag="p" variant="textSM" class="text-base-600 dark:text-base-300">
-            Nas tarefas que permitem divisão independente, dois subagentes podem cuidar de partes delimitadas usando modelos mais econômicos; um terceiro, com um modelo mais capaz, revisa e valida os resultados integrados. Os primeiros recebem apenas os arquivos e critérios necessários. Essa divisão reduz trabalho duplicado e reserva a revisão mais cuidadosa para a etapa de integração, equilibrando agilidade, qualidade e custo.
+            Em processos trabalhosos utilizo subagentes para dividir as tarefas e revisar o trabalho. Partes mais trabalhosas e menos complexas são delegadas para modelos mais econômicos para economizar tokenks, um subagente com modelo mais avançado é responsavel por revisar o trabalho feito e fazer validações necessárias. Essa divisão é feita por instruções em um arquivo markdown
           </Text>
-          <Text tag="p" variant="textSM" class="text-base-600 dark:text-base-300">
-            Nos projetos, divido tarefas independentes entre subagentes e reservo uma etapa de revisão para validar a integração. As instruções orientam escolher agentes conforme a complexidade. Modelos mais econômicos podem executar partes delimitadas, enquanto um modelo mais capaz pode revisar o resultado, equilibrando agilidade, qualidade e custo.
-          </Text>
+    
         </div>
       </article>
 
       <article class="grid grid-cols-1 gap-4 border-t border-base-200 py-8 dark:border-base-800 lg:grid-cols-4">
         <Text tag="p" variant="textXS" class="uppercase text-base-600 dark:text-base-300">02 · Eficiência</Text>
-        <Text tag="h3" variant="textLG" class="font-semibold text-base-900 dark:text-white">Regras para reduzir contexto desnecessário</Text>
+        <Text tag="h3" variant="textLG" class="font-semibold text-base-900 dark:text-white">Instruções para economia de tokens</Text>
         <div class="space-y-4 lg:col-span-2">
           <Text tag="p" variant="textSM" class="text-base-600 dark:text-base-300">
-            Começo pela busca de nomes, caminhos e símbolos; leio apenas os trechos relevantes e amplio a consulta quando dependências exigem. Também evito despejar arquivos, diffs e logs completos, reutilizo informações já verificadas, agrupo inspeções independentes e mantenho mudanças focadas. Para delegar, delimito tarefas independentes e compartilho somente o contexto necessário.
+            Defino em um arquivo markdown instruções para o modelo, como por exemplo: "Leia apenas os arquivos que estão no contexto do projeto", "Não repita informações que já foram lidas", "Seja conciso e direto ao ponto". Essas instruções ajudam a manter o contexto útil, reduzir leituras repetidas e concentrar o esforço na tarefa.
           </Text>
           <Text tag="p" variant="textSM" class="text-base-600 dark:text-base-300">
-            Essas práticas estão nas instruções do projeto e ajudam a manter o contexto útil, reduzir leituras repetidas e concentrar o esforço na tarefa.
+            Com essas instruções, consigo reduzir o consumo de tokens e aumentar a eficiência do trabalho, mantendo o foco no que é relevante para o projeto.
           </Text>
         </div>
       </article>
@@ -55,7 +53,18 @@ import Wrapper from "@/components/fundations/containers/Wrapper.astro";
           </Text>
         </div>
       </article>
-
+      <article class="grid grid-cols-1 gap-4 border-t border-base-200 py-8 dark:border-base-800 lg:grid-cols-4">
+        <Text tag="p" variant="textXS" class="uppercase text-base-600 dark:text-base-300">04 · Melhorador de Prompt</Text>
+        <Text tag="h3" variant="textLG" class="font-semibold text-base-900 dark:text-white">Prompt Engineering</Text>
+        <div class="space-y-4 lg:col-span-2">
+          <Text tag="p" variant="textSM" class="text-base-600 dark:text-base-300">
+            Para melhorar a qualidade das respostas do modelo, utilizo técnicas de prompt engineering, que envolvem a criação de prompts mais claros, específicos e direcionados. Isso ajuda a reduzir ambiguidades e aumentar a precisão das respostas, tornando o trabalho mais eficiente e eficaz.
+          </Text>
+          <Text tag="p" variant="textSM" class="text-base-600 dark:text-base-300">
+            Além disso, implementei uma habilidade no codex onde eu forneco instruções para o modelo melhorar o prompt, tornando-o mais claro e específico. Isso permite que o modelo compreenda melhor a tarefa e forneça respostas mais precisas e relevantes.
+          </Text>
+        </div>
+      </article>
     </div>
   </Wrapper>
 </section>
