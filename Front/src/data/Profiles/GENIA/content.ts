@@ -26,6 +26,6 @@ export const profileContent = {
     { href: "https://www.linkedin.com/in/lfilipelima", text: "LinkedIn" },
     { href: "https://www.kaggle.com/luisfilipelima", text: "Kaggle" },
     { href: "https://huggingface.co/LFilipeLima", text: "Hugging Face" },
-    { href: "https://github.com/cc24139", text: "GitHub" },
+    { href: "https://github.com/LFilipeLima", text: "GitHub" },
   ],
 };

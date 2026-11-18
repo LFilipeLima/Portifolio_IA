@@ -95,7 +95,7 @@ export const projectItems: PortfolioCase[] = [
     description:
       "Agente em Python para jogar Othello, usando busca Minimax e poda Alfa-Beta para escolher jogadas contra outra IA.",
     category: "Inteligência Artificial · Jogos",
-    repositoryUrl: "https://github.com/cc24139/TrabalhosIA/tree/main/ti326m-trabalho1-equipe3-master/ti326m-trabalho1-equipe3-master",
+    repositoryUrl: "https://github.com/LFilipeLima/TrabalhosIA/tree/main/ti326m-trabalho1-equipe3-master/ti326m-trabalho1-equipe3-master",
     videoUrl: "/GENIA/20261029-0054-27.8724262.mp4",
     detail: {
       summary:
@@ -131,7 +131,7 @@ export const projectItems: PortfolioCase[] = [
     description:
       "Caminho de busca com meta-heurísticas: aplicação de ILS e BRKGA para encontrar rotas que respeitem precedências de coleta e entrega.",
     category: "Inteligência Artificial · Otimização",
-    repositoryUrl: "https://github.com/cc24139/TrabalhosIA/tree/main/ti326m-trabalho2-equipe-11-master/ti326m-trabalho2-equipe-11-master",
+    repositoryUrl: "https://github.com/LFilipeLima/TrabalhosIA/tree/main/ti326m-trabalho2-equipe-11-master/ti326m-trabalho2-equipe-11-master",
     videoUrl: "/GENIA/Trabalho2BRKGAILS.mp4",
     detail: {
       summary:
@@ -167,7 +167,7 @@ export const projectItems: PortfolioCase[] = [
     description:
       "Sistema de análise de coletas de água que combina imagens do corpo hídrico, detecções visuais e estimativas de concentração de oito metais para apoiar a triagem ambiental.",
     category: "IA aplicada · Visão computacional · Regressão",
-    repositoryUrl: "https://github.com/cc24139/WaterPath_TCC",
+    repositoryUrl: "https://github.com/LFilipeLima/WaterPath_TCC",
     detail: {
       summary:
         "TCC que integra uma foto e medições físico-químicas de uma coleta. O serviço de IA detecta elementos visuais na imagem e estima concentrações de oito metais; a API reúne esses dados, aplica uma regra de triagem de risco e registra a análise.",
@@ -228,6 +228,41 @@ export const projectItems: PortfolioCase[] = [
           eyebrow: "04 · Registro",
           title: "API principal",
           text: "A API .NET valida a resposta do serviço de IA e salva os resultados associados à coleta, disponíveis para apoiar o acompanhamento do corpo hídrico.",
+        },
+      ],
+    },
+  },
+  {
+    slug: "deteccao-transacoes-fraudulentas",
+    year: "TI326",
+    title: "Detecção de transações fraudulentas",
+    description:
+      "Modelos de Machine Learning para identificar fraudes em pagamentos e avaliar o impacto financeiro das decisões de aprovação e recusa.",
+    category: "Inteligência Artificial · Machine Learning",
+    repositoryUrl: "https://github.com/LFilipeLima/TrabalhoIA-AnaliseFraude",
+    detail: {
+      summary:
+        "Projeto acadêmico que investiga modelos supervisionados para detectar transações potencialmente fraudulentas, considerando o retorno financeiro para a empresa que processa os pagamentos.",
+      meta: [
+        { label: "Papel", value: "Desenvolvimento em equipe · Luis Filipe Lima" },
+        { label: "Equipe", value: "Daniel Henrique da Silva Soares · Mariana Marietti da Costa" },
+        { label: "Tecnologias", value: "Python · FastAPI · CatBoost · XGBoost · LightGBM · Ensemble Learning" },
+      ],
+      blocks: [
+        {
+          heading: "O desafio",
+          text: "Identificar transações suspeitas exige equilibrar a detecção de fraudes com o custo de decisões incorretas. O projeto avalia os modelos também pelo impacto financeiro, em vez de otimizar apenas a quantidade de fraudes encontradas.",
+          aside: "A decisão de aprovar ou recusar depende da probabilidade estimada e do limiar configurado.",
+        },
+        {
+          heading: "Dados e modelos",
+          text: "O trabalho prepara os dados, constrói uma One Big Table e cria atributos ligados ao comportamento de cartões e terminais. Compara CatBoost, XGBoost e LightGBM e aplica estratégias de ensemble com árvores de decisão.",
+          aside: "Os notebooks documentam a preparação dos dados, a engenharia de atributos e a avaliação experimental.",
+        },
+        {
+          heading: "API de predição",
+          text: "Uma API em FastAPI recebe os dados básicos de uma nova transação, calcula os atributos a partir do histórico e consulta os modelos treinados. O repositório disponibiliza rotas para cada modelo e uma opção de votação combinada.",
+          aside: "O código, os notebooks e as instruções para executar o projeto estão no GitHub.",
         },
       ],
     },
